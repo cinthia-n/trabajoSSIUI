@@ -50,6 +50,12 @@ import {HttpClientModule} from '@angular/common/http';
 import {baseURL} from './shared/baseurl';
 import { EmployeeComponent } from './employee/employee.component';
 import { RegEmployeeComponent } from './reg-employee/reg-employee.component';
+import { PositionComponent } from './position/position.component';
+import { ContractComponent } from './contract/contract.component';
+import { AreaComponent } from './area/area.component';
+import { DepartmentComponent } from './department/department.component';
+import { CompanyComponent } from './company/company.component';
+import { DateTableComponent } from './date-table/date-table.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +69,13 @@ import { RegEmployeeComponent } from './reg-employee/reg-employee.component';
     ContactComponent,
     LoginComponent,
     EmployeeComponent,
-    RegEmployeeComponent
+    RegEmployeeComponent,
+    PositionComponent,
+    ContractComponent,
+    AreaComponent,
+    DepartmentComponent,
+    CompanyComponent,
+    DateTableComponent
   ],
   imports: [
     BrowserModule,

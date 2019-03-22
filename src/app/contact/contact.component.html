@@ -13,15 +13,15 @@
     <h3>Location Information</h3>
     <div fxLayout="column" fxLayout.gt-sm="row">
       <div fxFlex="50" fxFlexOffset="20px">
-        <h4>Our Address</h4>
+        <h4>Nuestra Direccion</h4>
         <address style="text-size: 80%">
-          121, Dr. Drive <br>
-          San Jose, California<br>
-          MOUNTAIN VIEW<br>
-          <i class="fa fa-phone"></i>: +1 1234 5678<br>
-          <i class="fa fa-fax"></i>: +1 8765 4321<br>
+          Dir. Av Blanco Galingo km 2 <br>
+          COCHABAMBA - BOLIVIA<br>
+          <br>
+          <i class="fa fa-phone"></i>: 4345567-76452006<br>
+          <i class="fa fa-fax"></i>: 43455675<br>
           <i class="fa fa-envelope"></i>:
-          <a href="mailto:ssi@food.net">ssi@food.net</a>
+          <a href="mailto:ssi@food.net">ssiIngenieria@ssi.net</a>
         </address>
         <p></p>
         <div>
@@ -31,13 +31,13 @@
         </div>
       </div>
       <div fxFlex="40">
-        <h4>Map of our Location</h4>
+        <h4>Mapa de nuestra direccion</h4>
       </div>
     </div>
   </div>
 
   <div fxFlex fxFlexOffset="20px" class="form-size">
-    <h3>Send us your Feedback</h3>
+    <h3>Envia sugerencias...</h3>
     <p>{{ feedbackForm.value | json }} {{ feedbackForm.status | json }}</p>
 
     <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" id="form">
