@@ -1,0 +1,43 @@
+<p>
+  reg-employee works!
+</p>
+
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Input">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<form novalidate [formGroup]="user" (ngSubmit)="onSubmit()">
+  <label>
+    <span>Full name</span>
+    <input
+      type="text"
+      placeholder="Your full name"
+      formControlName="name">
+  </label>
+  <label>
+    <span>Email address</span>
+    <input
+      type="password"
+      placeholder="Your passwornd"
+      formControlName="password">
+  </label>
+  <label>
+    <span>Confirm address</span>
+    <input
+      type="password"
+      placeholder="Confirm your password"
+      formControlName="passwordRepeat">
+  </label>
+  <button type="submit">Sign up</button>
+</form>

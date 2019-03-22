@@ -48,6 +48,8 @@ import {LoginComponent} from './login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {baseURL} from './shared/baseurl';
+import { EmployeeComponent } from './employee/employee.component';
+import { RegEmployeeComponent } from './reg-employee/reg-employee.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import {baseURL} from './shared/baseurl';
     AboutComponent,
     HomeComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeeComponent,
+    RegEmployeeComponent
   ],
   imports: [
     BrowserModule,
